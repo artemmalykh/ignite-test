@@ -18,4 +18,4 @@
 
 source ./build-cp.sh
 echo "CLASSPATH IS:${cp}"
-java -cp ${cp} TestCacheLoader ${SERVER_CONFIG}
+java -cp ${cp} TestCacheLoader /workdir/server.xml /entries/entries.txt

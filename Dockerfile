@@ -57,4 +57,10 @@ RUN chmod +x build-cp.sh && \
     MLCP=`bash build-cp.sh` && \
     javac -cp ${MLCP} TestCacheLoader.java
 
+RUN mkdir /entries
+
+COPY entries/entries.txt /entries
+
+VOLUME /entries/
+
 CMD /bin/bash run-ignite.sh

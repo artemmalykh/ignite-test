@@ -1,0 +1,6 @@
+#test_cache
+1 first
+2 second
+3 third
+#second_cache
+100 aaa
